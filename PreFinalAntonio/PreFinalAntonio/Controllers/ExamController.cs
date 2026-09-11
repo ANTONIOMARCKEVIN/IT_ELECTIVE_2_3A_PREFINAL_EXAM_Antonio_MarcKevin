@@ -118,6 +118,12 @@ namespace PreFinalAntonio.Controllers
                     QuestionText = "Which middleware is commonly used in ASP.NET Core for centralized exception handling?",
                     Options = new() { "A. UseDatabase()", "B. UseExceptionHandler()", "C. UseValidationHandler()", "D. UseMvcDatabase()" },
                     CorrectAnswer = "B. UseExceptionHandler()"
+                },
+                new ExamItem {
+                    Number = 19,
+                    QuestionText = "A user requests /Student/999, but Student 999 does not exist. What would be the most appropriate response?",
+                    Options = new() { "A. Display the student's information anyway", "B. Display a Not Found (404) response/page", "C. Delete Student 999", "D. Create Student 999 automatically" },
+                    CorrectAnswer = "B. Display a Not Found (404) response/page"
                 }
 
             };
