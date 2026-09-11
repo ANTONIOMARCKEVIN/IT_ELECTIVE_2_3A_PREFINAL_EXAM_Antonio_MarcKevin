@@ -64,6 +64,12 @@ namespace PreFinalAntonio.Controllers
                     QuestionText = "What is the purpose of a navigation property such as public Section Section { get; set; }?",
                     Options = new() { "A. It stores the database password", "B. It represents a relationship to another entity", "C. It creates a new database", "D. It validates the student's name" },
                     CorrectAnswer = "B. It represents a relationship to another entity"
+                },
+                new ExamItem {
+                    Number = 10,
+                    QuestionText = "What does .Include() generally allow EF Core to do?",
+                    Options = new() { "A. Delete the Section table", "B. Load related Section data together with Students", "C. Create a new Student", "D. Validate Student input" },
+                    CorrectAnswer = "B. Load related Section data together with Students"
                 }
 
             };
