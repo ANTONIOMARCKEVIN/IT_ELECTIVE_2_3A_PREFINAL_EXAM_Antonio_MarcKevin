@@ -46,6 +46,12 @@ namespace PreFinalAntonio.Controllers
                     QuestionText = "Where is a database connection string commonly stored in an ASP.NET Core MVC application?",
                     Options = new() { "A. Program.cs only", "B. appsettings.json", "C. Index.cshtml", "D. Student.cs" },
                     CorrectAnswer = "B. appsettings.json"
+                },
+                new ExamItem {
+                    Number = 7,
+                    QuestionText = "A Student belongs to exactly one Section, while a Section can contain many students. What type of relationship is this?",
+                    Options = new() { "A. One-to-One", "B. One-to-Many", "C. Many-to-Many", "D. Many-to-One only" },
+                    CorrectAnswer = "B. One-to-Many"
                 }
 
             };
