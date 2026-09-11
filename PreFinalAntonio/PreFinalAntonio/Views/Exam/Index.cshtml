@@ -1,0 +1,52 @@
+﻿@model IEnumerable<PreFinalAntonio.Models.ExamItem>
+
+@{
+    ViewData["Title"] = "Pre-Final Exam - My Answers";
+}
+
+<div class="text-center mb-5 p-4 bg-light rounded-4 shadow-sm border">
+    <h1 class="display-6 fw-bold text-primary">Web Systems and Technologies - Pre-Final Exam</h1>
+    <p class="text-muted mb-1">Interactive Questionnaire & Student Answer Sheet</p>
+    <span class="badge bg-dark me-1">Student: Antonio, Marc Kevin</span>
+    <span class="badge bg-secondary">Section: BSIT-31E2</span>
+</div>
+
+@if (Model != null)
+{
+    <div class="row justify-content-center">
+        <div class="col-lg-9">
+            @foreach (var item in Model)
+            {
+                <div class="card shadow-sm mb-4 border-0 rounded-4 overflow-hidden">
+                    <div class="card-header bg-gradient bg-primary text-white py-3 d-flex justify-content-between align-items-center">
+                        <h5 class="mb-0 fw-bold">Question @item.Number</h5>
+                        <span class="badge bg-light text-primary fw-bold">Multiple Choice</span>
+                    </div>
+
+                    <div class="card-body p-4">
+                        <p class="card-text fs-5 text-dark mb-4 fw-medium">@item.QuestionText</p>
+
+                        <div class="list-group mb-3">
+                            @foreach (var option in item.Options)
+                            {
+                                var isSelected = option.Trim().Equals(item.CorrectAnswer.Trim(), StringComparison.OrdinalIgnoreCase);
+                                <div class="list-group-item list-group-item-action py-3 @(isSelected ? "border-success border-2 bg-success bg-opacity-10 fw-bold text-success" : "text-muted")">
+                                    @option
+                                    @if (isSelected)
+                                    {
+                                        <span class="float-end badge bg-success">Selected Answer</span>
+                                    }
+                                </div>
+                            }
+                        </div>
+
+                        <div class="p-3 bg-success bg-opacity-10 border border-success rounded-3 text-success d-flex align-items-center">
+                            <strong class="me-2">My Answer:</strong>
+                            <span>@item.CorrectAnswer</span>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+}
