@@ -106,6 +106,12 @@ namespace PreFinalAntonio.Controllers
                     QuestionText = "Which is the best reason for having a database-level unique constraint on StudentNumber?",
                     Options = new() { "A. It protects data integrity even if application-level validation is bypassed", "B. It makes Razor Views render faster", "C. It removes the need for a Controller", "D. It automatically creates a ViewModel" },
                     CorrectAnswer = "A. It protects data integrity even if application-level validation is bypassed"
+                },
+                new ExamItem {
+                    Number = 17,
+                    QuestionText = "What is the purpose of a try...catch block in a controller?",
+                    Options = new() { "A. To create navigation properties", "B. To catch and handle exceptions that may occur during execution", "C. To generate database tables", "D. To perform client-side validation" },
+                    CorrectAnswer = "B. To catch and handle exceptions that may occur during execution"
                 }
 
             };
