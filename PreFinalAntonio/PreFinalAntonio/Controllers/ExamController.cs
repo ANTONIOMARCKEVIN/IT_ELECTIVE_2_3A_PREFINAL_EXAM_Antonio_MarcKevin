@@ -52,6 +52,12 @@ namespace PreFinalAntonio.Controllers
                     QuestionText = "A Student belongs to exactly one Section, while a Section can contain many students. What type of relationship is this?",
                     Options = new() { "A. One-to-One", "B. One-to-Many", "C. Many-to-Many", "D. Many-to-One only" },
                     CorrectAnswer = "B. One-to-Many"
+                },
+                new ExamItem {
+                    Number = 8,
+                    QuestionText = "In the following example, what is SectionId? public int SectionId { get; set; } public Section Section { get; set; }",
+                    Options = new() { "A. Primary key of Student", "B. Foreign key referencing Section", "C. Navigation property", "D. Database connection string" },
+                    CorrectAnswer = "B. Foreign key referencing Section"
                 }
 
             };
