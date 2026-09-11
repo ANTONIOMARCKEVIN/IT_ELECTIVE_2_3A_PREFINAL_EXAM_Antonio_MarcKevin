@@ -34,6 +34,12 @@ namespace PreFinalAntonio.Controllers
                     QuestionText = "Which EF Core component is primarily responsible for communicating with the database?",
                     Options = new() { "A. DbContext", "B. DbSetView", "C. ControllerContext", "D. RazorContext" },
                     CorrectAnswer = "A. DbContext"
+                },
+                new ExamItem {
+                    Number = 5,
+                    QuestionText = "What does the following command primarily do? dotnet ef dbcontext scaffold \"ConnectionString\" Microsoft.EntityFrameworkCore.SqlServer -o Models",
+                    Options = new() { "A. Deletes the database", "B. Creates a new MVC project", "C. Generates EF Core models and a DbContext from an existing database", "D. Starts the MVC application" },
+                    CorrectAnswer = "C. Generates EF Core models and a DbContext from an existing database"
                 }
 
             };
