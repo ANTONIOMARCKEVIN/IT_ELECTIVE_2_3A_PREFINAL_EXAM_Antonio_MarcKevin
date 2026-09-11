@@ -100,6 +100,12 @@ namespace PreFinalAntonio.Controllers
                     QuestionText = "A school requires every student to have a unique Student Number. Which rule best represents this requirement?",
                     Options = new() { "A. Student Number should always be nullable", "B. Student Number should be unique", "C. Student Number should always be the same", "D. Student Number should contain only spaces" },
                     CorrectAnswer = "B. Student Number should be unique"
+                },
+                new ExamItem {
+                    Number = 16,
+                    QuestionText = "Which is the best reason for having a database-level unique constraint on StudentNumber?",
+                    Options = new() { "A. It protects data integrity even if application-level validation is bypassed", "B. It makes Razor Views render faster", "C. It removes the need for a Controller", "D. It automatically creates a ViewModel" },
+                    CorrectAnswer = "A. It protects data integrity even if application-level validation is bypassed"
                 }
 
             };
