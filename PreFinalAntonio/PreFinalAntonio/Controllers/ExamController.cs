@@ -124,6 +124,12 @@ namespace PreFinalAntonio.Controllers
                     QuestionText = "A user requests /Student/999, but Student 999 does not exist. What would be the most appropriate response?",
                     Options = new() { "A. Display the student's information anyway", "B. Display a Not Found (404) response/page", "C. Delete Student 999", "D. Create Student 999 automatically" },
                     CorrectAnswer = "B. Display a Not Found (404) response/page"
+                },
+                new ExamItem {
+                    Number = 20,
+                    QuestionText = "A student already belongs to Section A for a particular subject. The application attempts to assign the same student to Section A again. What is the primary concern?",
+                    Options = new() { "A. Data integrity", "B. HTML formatting", "C. CSS inheritance", "D. Razor syntax" },
+                    CorrectAnswer = "A. Data integrity"
                 }
 
             };
