@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PreFinalAntonio")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+81b4c1987aa5bc8745ea5e1730cd495f666d95d0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3f5d34aadaa819ebd5c5e3f9aa15e727473dc74a")]
 [assembly: System.Reflection.AssemblyProductAttribute("PreFinalAntonio")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PreFinalAntonio")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
