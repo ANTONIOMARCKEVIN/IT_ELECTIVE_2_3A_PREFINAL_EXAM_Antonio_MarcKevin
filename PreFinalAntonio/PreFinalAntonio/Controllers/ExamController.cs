@@ -70,6 +70,12 @@ namespace PreFinalAntonio.Controllers
                     QuestionText = "What does .Include() generally allow EF Core to do?",
                     Options = new() { "A. Delete the Section table", "B. Load related Section data together with Students", "C. Create a new Student", "D. Validate Student input" },
                     CorrectAnswer = "B. Load related Section data together with Students"
+                },
+                new ExamItem {
+                    Number = 11,
+                    QuestionText = "Why might a ViewModel be used when displaying Student and Section information?",
+                    Options = new() { "A. To replace the database", "B. To combine or shape the data specifically needed by the view", "C. To automatically create database tables", "D. To prevent controllers from using LINQ" },
+                    CorrectAnswer = "B. To combine or shape the data specifically needed by the view"
                 }
 
             };
