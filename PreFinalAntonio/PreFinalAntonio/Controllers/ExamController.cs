@@ -40,6 +40,12 @@ namespace PreFinalAntonio.Controllers
                     QuestionText = "What does the following command primarily do? dotnet ef dbcontext scaffold \"ConnectionString\" Microsoft.EntityFrameworkCore.SqlServer -o Models",
                     Options = new() { "A. Deletes the database", "B. Creates a new MVC project", "C. Generates EF Core models and a DbContext from an existing database", "D. Starts the MVC application" },
                     CorrectAnswer = "C. Generates EF Core models and a DbContext from an existing database"
+                },
+                new ExamItem {
+                    Number = 6,
+                    QuestionText = "Where is a database connection string commonly stored in an ASP.NET Core MVC application?",
+                    Options = new() { "A. Program.cs only", "B. appsettings.json", "C. Index.cshtml", "D. Student.cs" },
+                    CorrectAnswer = "B. appsettings.json"
                 }
 
             };
