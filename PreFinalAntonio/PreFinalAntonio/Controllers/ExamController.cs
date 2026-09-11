@@ -58,6 +58,12 @@ namespace PreFinalAntonio.Controllers
                     QuestionText = "In the following example, what is SectionId? public int SectionId { get; set; } public Section Section { get; set; }",
                     Options = new() { "A. Primary key of Student", "B. Foreign key referencing Section", "C. Navigation property", "D. Database connection string" },
                     CorrectAnswer = "B. Foreign key referencing Section"
+                },
+                new ExamItem {
+                    Number = 9,
+                    QuestionText = "What is the purpose of a navigation property such as public Section Section { get; set; }?",
+                    Options = new() { "A. It stores the database password", "B. It represents a relationship to another entity", "C. It creates a new database", "D. It validates the student's name" },
+                    CorrectAnswer = "B. It represents a relationship to another entity"
                 }
 
             };
